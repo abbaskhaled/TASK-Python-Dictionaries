@@ -2,7 +2,7 @@
 person = {
         "name": "abbas",
         "age": 25,
-        "hobbies": ["swiming", "playing ps4"],
+        "hobbies": ["swiming", "playing ps4","basketball"],
 }
 
 # Create a function called `change_age` which takes the `person` dictionary and a `number` as arguments, this function changes the age in the dictionary to the `number`. The return value of this function is the updated dictionary.
@@ -43,4 +43,11 @@ print(add_job(person, "Teacher"))
 
 
 def check_hobbies(person):
-    ...
+  person = len(person["hobbies"])
+  if person > 3:
+    message = "you are talent "
+    return message
+    
+print(check_hobbies(person))
+    
+    
